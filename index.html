@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    img {
+      object-fit: cover;
+    }
+
+    .col-card {
+      padding: 30px;
+    }
+
+    .col-footer {
+      padding: 40px 20px;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: url(https://picsum.photos/200/200/?random=9);
+    }
+
+    @media (min-width: 992px) {
+      .col-card {
+        padding: 80px;
+      }
+
+      .col-a {
+        transform: translateX(100%);
+      }
+
+      .col-b {
+        transform: translateX(-100%);
+      }
+
+      .col-footer {
+        padding: 40px 80px;
+      }
+    }
+
+    .navbar-light .navbar-toggler {
+      color: rgba(0, 0, 0, 0.5);
+      border: 0;
+    }
+
+    .carousel-item {
+      transition: 4s all cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-targer="#spy">
+  <nav id="spy" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#link1">Link1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#link2">Link2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#link3">Link3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#link4">Link4</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#link5">Link5</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- link1 -->
+  <div id="link1" class="container-fluid p-0">
+    <div id="carouselExampleIndicators" class="carousel slide vh-100 bg-dark" data-ride="carousel" data-interval="5000">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img src="https://picsum.photos/1920/1080/?random=1" class="d-block w-100 h-100">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="https://picsum.photos/1920/1080/?random=2" class="d-block w-100 h-100">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="https://picsum.photos/1920/1080/?random=3" class="d-block w-100 h-100">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- link2 -->
+  <div id="link2" class="col-card container">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div class="card h-100">
+          <img src="https://picsum.photos/1920/1080/?random=4" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              context to bulk.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="card h-100">
+          <img src="https://picsum.photos/1920/1080/?random=5" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              and make up the bulk of the and content.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="card h-100">
+          <img src="https://picsum.photos/1920/1080/?random=6" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- link3 -->
+  <div id="link3" class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-lg-6 w-50 vh-100 p-0">
+        <img src="https://picsum.photos/1920/1080/?random=7" class="w-100 h-100">
+      </div>
+      <div class="col-12 col-lg-6 w-50 p-0">
+        <div class="card h-100" style="background: rgb(241, 241, 241); border-radius: 0; border: 0;">
+          <div class="card-body p-0 my-3 d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title" style="font-size: 2.5rem; font-weight: lighter;">Autumn Collection</h5>
+            <p class="card-text text-center" style="padding: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure neque error
+              totam modi quia quis obcaecati inventore tenetur unde. Aspernatur vitae hic dolorum fugiat atque
+              blanditiis nobis enim reiciendis dicta corrupti, deserunt delectus sit aperiam dicta corrupti, deserunt
+              delectus sit aperiam!</p>
+            <a href="#" class="btn btn-success">VIEW COLLECTION</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- link4 -->
+  <div id="link4" class="container-fluid mb-5">
+    <div class="row">
+      <div class="col-a col-12 col-lg-6 w-50 vh-100 p-0">
+        <img src="https://picsum.photos/1920/1080/?random=8" class="w-100 h-100">
+      </div>
+      <div class="col-b col-12 col-lg-6 w-50 p-0">
+        <div class="card h-100" style="background: rgb(241, 241, 241); border-radius: 0; border: 0;">
+          <div class="card-body p-0 my-3 d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title" style="font-size: 2.5rem; font-weight: lighter;">Autumn Collection</h5>
+            <p class="card-text text-center" style="padding: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure neque error
+              totam modi quia quis obcaecati inventore tenetur unde. Aspernatur vitae hic dolorum fugiat atque
+              blanditiis nobis enim reiciendis dicta corrupti, deserunt delectus sit aperiam dicta corrupti, deserunt
+              delectus sit aperiam!</p>
+            <a href="#" class="btn btn-success">VIEW COLLECTION</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- link5 -->
+  <div id="link5" class="col-footer container-fluid bg-dark text-white">
+    <div class="row">
+      <div class="col-6 col-lg-3">
+        <div class="circle"></div>
+      </div>
+      <div class="col-6 col-lg-3">
+        <p style="font-weight: bold;">Address</p>
+        <p>1234 Street Name<br>City, AA 99999</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <p style="font-weight: bold;">Links</p>
+        <p>Website builder<br>Download for Windows<br>Download for Mac</p>
+      </div>
+      <div class="col-6 col-lg-3">
+        <p style="font-weight: bold;">Contacts</p>
+        <p>Emails: garinhsh@gmail.com<br>Phone: +886 1234567890<br>Fax: +886 0987654321</p>
+      </div>
+      <div class="col-12 text-center">
+        &copy;2021 Free footer templates - All Rights Reserved
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
